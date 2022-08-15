@@ -2507,11 +2507,17 @@ main >.inner {
   top: -10%;
   left: -10%;
 }
-.social .item.::before {
-  background-color: ;
+.social .item.github::before {
+  background-color: #191717;
 }
-.social .item. i {
-  color: ;
+.social .item.github i {
+  color: #191717;
+}
+.social .item.about::before {
+  background-color: #3b5998;
+}
+.social .item.about i {
+  color: #3b5998;
 }
 .social .item:focus i,
 .social .item:hover i {
@@ -3863,6 +3869,7 @@ main >.inner {
 }
 #loading {
   background-color: var(--grey-1);
+  display: none;
 }
 .cat {
   position: relative;
