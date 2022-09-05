@@ -24,15 +24,15 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <meta name="keywords" content="嵌入式系统" />
+  <meta name="keywords" content="信号与系统" />
 
 
-<link rel="canonical" href="http://sumile117.github.io/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="http://sumile117.github.io/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/">
 
 
 
   <title>
-嵌入式系统-笔记 - 课程笔记 |
+信号与系统-笔记 - 课程笔记 |
 Echo Corridors = Echo Corridors = A blog of Yesterday</title>
 <meta name="generator" content="Hexo 6.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,23 +60,23 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">嵌入式系统-笔记
+  <h1 itemprop="name headline">信号与系统-笔记
   </h1>
   
 <div class="meta">
-  <span class="item" title="创建时间：2022-09-05 08:04:59">
+  <span class="item" title="创建时间：2022-09-05 09:56:03">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2022-09-05T08:04:59+08:00">2022-09-05</time>
+    <time itemprop="dateCreated datePublished" datetime="2022-09-05T09:56:03+08:00">2022-09-05</time>
   </span>
   <span class="item" title="本文字数">
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>23</span>
+    <span>213</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56azcb5g2j31hc0u01bu.jpg"></li>
           <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56augvbojj31hc0u07g5.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56azmgd94j31hc0u0n9s.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56asjih5bj31gs0u012f.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56atesa13j31hc0u0ak8.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56azoop9pj30zk0m8gvg.jpg"></li>
           <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56aupg8t8j31hc0u046o.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56ark0i75j31al0u0gw2.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56ar32n3zj31hc0u0am7.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/008sTZgRly8h56b0k6bzdj31gs0u048b.jpg"></li>
         </ul>
       </div>
     </header>
@@ -153,7 +153,7 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="http://sumile117.github.io/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/">
+  <link itemprop="mainEntityOfPage" href="http://sumile117.github.io/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -168,10 +168,16 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="嵌入式系统"><a href="#嵌入式系统" class="headerlink" title="嵌入式系统"></a>嵌入式系统</h2><p><em>其作始也简，其将毕也必巨。 –《庄子》</em></p>
+    <h1 id="信号与系统"><a href="#信号与系统" class="headerlink" title="信号与系统"></a>信号与系统</h1><h2 id="信号的定义"><a href="#信号的定义" class="headerlink" title="信号的定义"></a>信号的定义</h2><p>信号时消息的表现形式或传送载体（狭义）。<br>信号时随参数变化的物理量（广义）。</p>
+<p>（1）数学表达式——函数<br>    f(x);<br>（2）波形图</p>
+<p>确定信号：信号在定义域上的每一点都有确定的值。<br>随机信号：与确定信号相对。</p>
+<p>抽样信号：幅值连续，时间离散。<br>数字信号：幅值不连续，时间离散。</p>
+<p>离散的正弦信号不一定是周期信号。</p>
+<p>周期信号，直流信号，随机信号都属于功率信号。</p>
+<p>一个信号可以既不是能量信号也不是功率信号。但不可能既是能量信号又是功率信号。</p>
 
       <div class="tags">
-          <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/" rel="tag"><i class="ic i-tag"></i> 嵌入式系统</a>
+          <a href="/tags/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/" rel="tag"><i class="ic i-tag"></i> 信号与系统</a>
       </div>
   </div>
 
@@ -183,9 +189,9 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-09-05 10:08:17" itemprop="dateModified" datetime="2022-09-05T10:08:17+08:00">2022-09-05</time>
+    <time title="修改时间：2022-09-05 16:13:53" itemprop="dateModified" datetime="2022-09-05T16:13:53+08:00">2022-09-05</time>
   </span>
-  <span id="嵌入式系统-笔记/" class="item leancloud_visitors" data-flag-title="嵌入式系统-笔记" title="阅读次数">
+  <span id="信号与系统-笔记/" class="item leancloud_visitors" data-flag-title="信号与系统-笔记" title="阅读次数">
       <span class="icon">
         <i class="ic i-eye"></i>
       </span>
@@ -204,7 +210,7 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="http://sumile117.github.io/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" title="嵌入式系统-笔记">http://sumile117.github.io/嵌入式系统-笔记/</a>
+    <a href="http://sumile117.github.io/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" title="信号与系统-笔记">http://sumile117.github.io/信号与系统-笔记/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -223,20 +229,20 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
     <div class="item left">
       
 
-  <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93MySQL-%E7%AC%94%E8%AE%B0/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;008sTZgRly8h56b0k6bzdj31gs0u048b.jpg" title="数据库MySQL-笔记">
+  <a href="/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;008sTZgRly8h56azmgd94j31hc0u0n9s.jpg" title="嵌入式系统-笔记">
   <span class="type">上一篇</span>
-  <span class="category"><i class="ic i-flag"></i> 学习笔记</span>
-  <h3>数据库MySQL-笔记</h3>
+  <span class="category"><i class="ic i-flag"></i> 课程笔记</span>
+  <h3>嵌入式系统-笔记</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;008sTZgRly8h56azmgd94j31hc0u0n9s.jpg" title="信号与系统-笔记">
+  <a href="/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E7%AC%94%E8%AE%B0/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;008sTZgRly8h56at34zsgj31900rsqfo.jpg" title="人工智能-笔记">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 课程笔记</span>
-  <h3>信号与系统-笔记</h3>
+  <h3>人工智能-笔记</h3>
   </a>
 
     </div>
@@ -255,11 +261,11 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.</span> <span class="toc-text">嵌入式系统</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.</span> <span class="toc-text">信号与系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.</span> <span class="toc-text">信号的定义</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li class="active"><a href="/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" rel="bookmark" title="嵌入式系统-笔记">嵌入式系统-笔记</a></li><li><a href="/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" rel="bookmark" title="信号与系统-笔记">信号与系统-笔记</a></li><li><a href="/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E7%AC%94%E8%AE%B0/" rel="bookmark" title="人工智能-笔记">人工智能-笔记</a></li>
+          <li><a href="/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" rel="bookmark" title="嵌入式系统-笔记">嵌入式系统-笔记</a></li><li class="active"><a href="/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" rel="bookmark" title="信号与系统-笔记">信号与系统-笔记</a></li><li><a href="/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E7%AC%94%E8%AE%B0/" rel="bookmark" title="人工智能-笔记">人工智能-笔记</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -332,12 +338,12 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93MySQL-%E7%AC%94%E8%AE%B0/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+        <a href="/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+        <a href="/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E7%AC%94%E8%AE%B0/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -359,20 +365,10 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="分类于 课程笔记">课程笔记</a>
+<a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 学习笔记">学习笔记</a>
 </div>
 
-    <span><a href="/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E7%AC%94%E8%AE%B0/" title="人工智能-笔记">人工智能-笔记</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="分类于 课程笔记">课程笔记</a>
-</div>
-
-    <span><a href="/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" title="信号与系统-笔记">信号与系统-笔记</a></span>
+    <span><a href="/%E6%95%B0%E6%8D%AE%E5%BA%93MySQL-%E7%AC%94%E8%AE%B0/" title="数据库MySQL-笔记">数据库MySQL-笔记</a></span>
   </li>
 
       
@@ -399,19 +395,29 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 学习笔记">学习笔记</a>
 </div>
 
-    <span><a href="/%E6%95%B0%E6%8D%AE%E5%BA%93MySQL-%E7%AC%94%E8%AE%B0/" title="数据库MySQL-笔记">数据库MySQL-笔记</a></span>
+    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="分类于 课程笔记">课程笔记</a>
 </div>
 
-    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F-%E7%AC%94%E8%AE%B0/" title="信号与系统-笔记">信号与系统-笔记</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="分类于 课程笔记">课程笔记</a>
+</div>
+
+    <span><a href="/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E7%AC%94%E8%AE%B0/" title="人工智能-笔记">人工智能-笔记</a></span>
   </li>
 
   </ul>
@@ -454,7 +460,7 @@ Echo Corridors = Echo Corridors = A blog of Yesterday</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '嵌入式系统-笔记/',
+    path: '信号与系统-笔记/',
     favicon: {
       show: "Echo Corridors",
       hide: "Echo Corridors"
